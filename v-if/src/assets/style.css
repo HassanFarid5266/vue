@@ -1,0 +1,82 @@
+@import './base.css';
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+} */
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 500;
+}
+a:hover,
+a.active {
+  color: #f70f07e3;
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+
+} */
+
+.logos ul {
+  padding: 0px;
+}
+
+.logos ul li {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+  list-style: none;
+}
+
+.logos ul li figcaption {
+    text-align: center;
+}
+
+.logos ul li img {
+  width: 100px;
+}
+
+.count {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  /* outline: none; */
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out ;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #da2822;
+  margin: 0 6px;
+  border-radius: 6px;
+}
+
+.btn.btn-primary:hover {
+  /* color: #000; */
+  border: 1.5px solid #da2822;
+  background-color: transparent;
+}
