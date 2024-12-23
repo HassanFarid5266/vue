@@ -5,6 +5,8 @@ import Header from "./components/layout/header.vue";
 import Footer from "./components/layout/footer.vue";
 import Welcome from "./components/home/welcome.vue";
 import Cards from "./components/home/cards.vue";
+import ProductCard from "./components/home/product-card.vue";
+
 </script>
 
 <template>
@@ -13,6 +15,10 @@ import Cards from "./components/home/cards.vue";
 
     <Welcome />
 
+    <Cards />
+
+    <ProductCard />
+    
     <Footer />
     <!-- <Blub /> -->
     <!-- <HelloWorld /> -->
