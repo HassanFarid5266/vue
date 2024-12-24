@@ -7,11 +7,6 @@
   margin-block: 20px;
 }
 
-/* .collection .sec-heading h1 {
-  color: var(--color-background);
-  font-size: 50px;
-} */
-
 .collection-cards {
   display: grid;
   grid-template-columns: auto auto auto auto;

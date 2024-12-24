@@ -1,6 +1,6 @@
 <style scoped>
 .product .sec-heading {
-    text-align: center;
+  text-align: center;
 }
 
 .products-cards {
@@ -160,13 +160,15 @@
   height: 100%;
   width: 300%;
   left: -100%;
-  background-image: linear-gradient(135deg, #9708cc, #43cbff, #9708cc, #43cbff);
-  transition: all 0.4s ease;
+  /* background-image: linear-gradient(135deg, #9708cc, #43cbff, #9708cc, #43cbff); */
+  background-color: transparent;
+  transition: all 0.5s ease;
   border-radius: 25px;
 }
 
 .product-card .button:hover .button-layer {
   left: 0;
+  background-color: #000;
 }
 
 .product-card .button button {
@@ -175,10 +177,17 @@
   width: 100%;
   background: none;
   outline: none;
-  border: none;
+  border: 1px solid #ccc;
+  border-radius: inherit;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
+  color: #000;
+  cursor: pointer;
+  /* transition: all 0.5s; */
+}
+
+.product-card .button button:hover {
   color: #fff;
 }
 
@@ -208,60 +217,63 @@
 <template>
   <section class="product boxed sec-pedding-bottom">
     <div class="sec-heading">
-    <h1>Best Seller</h1>
-    <p>
-      Shop the Latest Styles: Stay ahead of the curve with our newest arrivals
-    </p>
-  </div>
-  <div class="products-cards">
-    <div class="product-card" v-for="x in image" :key="x.color">
-      <div class="logo-cart">
-        <img :src="logo" alt="logo" />
-        <i class="bx bx-shopping-bag"></i>
-      </div>
-      <div class="main-images">
-        <img
-          :id="x.color"
-          :class="x.color"
-          :src="x.url"
-          :alt="x.color"
-          loading="lazy"
-        />
-      </div>
-      <div class="shoe-details">
-        <span class="shoe_name">ADDIDAS GAZE ZX</span>
-        <p>
-          Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
-          Eum, ea, ducimus!
-        </p>
-        <div class="stars">
-          <i class="bx bxs-star"></i>
-          <i class="bx bxs-star"></i>
-          <i class="bx bxs-star"></i>
-          <i class="bx bxs-star"></i>
-          <i class="bx bx-star"></i>
+      <h1>Best Seller</h1>
+      <p>
+        Shop the Latest Styles: Stay ahead of the curve with our newest arrivals
+      </p>
+    </div>
+    <div class="products-cards">
+      <div class="product-card" v-for="x in image" :key="x.color">
+        <div class="logo-cart">
+          <img :src="logo" alt="logo" />
+          <i :class="x.icon"></i>
         </div>
-      </div>
-      <div class="color-price">
-        <div class="color-option">
-          <span class="color">Colour:</span>
-          <div class="circles">
-            <span class="circle blue active" id="blue"></span>
-            <span class="circle pink" id="pink"></span>
-            <span class="circle yellow" id="yellow"></span>
+        <div class="main-images">
+          <img
+            :id="x.color"
+            :class="x.color"
+            :src="x.url"
+            :alt="x.color"
+            loading="lazy"
+          />
+        </div>
+        <div class="shoe-details">
+          <span class="shoe_name">ADDIDAS GAZE ZX</span>
+          <p>
+            Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit.
+            Eum, ea, ducimus!
+          </p>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
           </div>
         </div>
-        <div class="price">
-          <span class="price_num">$09.00</span>
-          <span class="price_letter">Nine dollar only</span>
+        <div class="color-price">
+          <div class="color-option">
+            <span class="color">Colour:</span>
+            <div class="circles">
+              <span class="circle blue active" id="blue"></span>
+              <span class="circle pink" id="pink"></span>
+              <span class="circle yellow" id="yellow"></span>
+            </div>
+          </div>
+          <div class="price">
+            <span class="price_num">$09.00</span>
+            <span class="price_letter">Nine dollar only</span>
+          </div>
+        </div>
+        <div class="button">
+          <div class="button-layer"></div>
+          <button>Add To Cart</button>
         </div>
       </div>
-      <div class="button">
-        <div class="button-layer"></div>
-        <button>Add To Cart</button>
-      </div>
     </div>
-  </div>
+    <div class="b-button">
+      <a href="#" class="btn btn-primary btn-pill">Load more</a>
+    </div>
   </section>
 </template>
 
@@ -271,12 +283,15 @@ const logo = "./src/assets/logo.jpg";
 const image = [
   {
     url: "./src/assets/blue.png",
+    icon: "bx bx-shopping-bag",
   },
   {
     url: "./src/assets/pink.png",
+    icon: "bx bxs-store",
   },
   {
     url: "./src/assets/yellow.png",
+    icon: "bx bxs-shopping-bags",
   },
 ];
 </script>

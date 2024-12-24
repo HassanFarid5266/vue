@@ -103,9 +103,14 @@ body {
 }
 
 .sec-heading p{
-  color: var(--color-background);
+  color: #000000bd;
   opacity: 0.88;
   font-size: 17px;
   font-weight: 400;
   line-height: normal;
+}
+
+.b-button {
+  margin-top: 60px;
+  text-align: center;
 }

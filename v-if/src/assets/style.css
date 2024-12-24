@@ -15,10 +15,11 @@ a,
   color: var(--text-color);
   font-size: 15px;
   font-weight: 500;
+  color: #000000bd;
 }
 a:hover,
 a.active {
-  color: #f70f07e3;
+  color: #000;
 }
 
 /* @media (min-width: 1024px) {
@@ -62,21 +63,26 @@ a.active {
   border: none;
   /* outline: none; */
   background-color: transparent;
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-size: 15px;
   font-weight: 500;
   transition: all 0.3s ease-in-out ;
+  cursor: pointer;
 }
 
 .btn-primary {
   color: #fff;
-  background-color: #da2822;
+  background-color: #000;
   margin: 0 6px;
   border-radius: 6px;
 }
 
 .btn.btn-primary:hover {
-  /* color: #000; */
-  border: 1.5px solid #da2822;
+  color: #000;
+  border: 1.5px solid #000;
   background-color: transparent;
+}
+
+.btn-pill {
+  border-radius: 50px;
 }
