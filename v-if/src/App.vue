@@ -8,6 +8,7 @@ import Welcome from "./components/home/welcome.vue";
 import Cards from "./components/home/cards.vue";
 import ProductCard from "./components/home/product-card.vue";
 import Shop from "./components/home/shop.vue";
+import Swiper from "./components/home/swiper.vue";
 
 </script>
 
@@ -23,6 +24,8 @@ import Shop from "./components/home/shop.vue";
 
     <Shop />
     
+    <Swiper />
+
     <Footer />
     <!-- <Blub /> -->
     <!-- <HelloWorld /> -->

@@ -80,6 +80,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .sec-pedding {
   padding: 120px 0;
 }
