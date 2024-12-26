@@ -45,17 +45,17 @@ footer {
         </p>
       </div>
       <div class="footer-link">
-          <li v-for="link in footerLinks1">
+          <li v-for="link in footerLinks1" :key="link">
             <a :href="link.url">{{ link.text }}</a>
           </li>
       </div>
       <div class="footer-link">
-        <li v-for="link in footerLinks2">
+        <li v-for="link in footerLinks2" :key="link">
           <a :href="link.url">{{ link.text }}</a>
         </li>
       </div>
       <div class="footer-link">
-        <li v-for="link in footerLinks3">
+        <li v-for="link in footerLinks3" :key="link">
           <a :href="link.url">{{ link.text }}</a>
         </li>
       </div>
