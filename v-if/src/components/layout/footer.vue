@@ -4,8 +4,8 @@
 }
 
 footer {
-  height: 400px;
-  padding: 100px 0px 0;
+  height: 320px;
+  padding: 50px 0px 0;
   display: flex;
   justify-content: space-between;
 }

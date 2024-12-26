@@ -53,6 +53,9 @@
   width: 100%;
   object-fit: cover;
   height: 220px;
+  rotate: 25deg;
+  z-index: -1;
+  position: relative;
 }
 
 .product-card .shoe-details .shoe_name {

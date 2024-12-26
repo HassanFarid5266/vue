@@ -1,7 +1,6 @@
 <script setup>
 // import HelloWorld from "./components/hello.vue";
 // import Blub from "./components/bulb.vue";
-
 import Header from "./components/layout/header.vue";
 import Footer from "./components/layout/footer.vue";
 import Welcome from "./components/home/welcome.vue";
@@ -9,7 +8,6 @@ import Cards from "./components/home/cards.vue";
 import ProductCard from "./components/home/product-card.vue";
 import Shop from "./components/home/shop.vue";
 import Swiper from "./components/home/swiper.vue";
-
 </script>
 
 <template>
@@ -27,8 +25,8 @@ import Swiper from "./components/home/swiper.vue";
     <Swiper />
 
     <Footer />
-    <!-- <Blub /> -->
-    <!-- <HelloWorld /> -->
+    <!-- <Blub />
+    <HelloWorld /> -->
   </div>
 </template>
 

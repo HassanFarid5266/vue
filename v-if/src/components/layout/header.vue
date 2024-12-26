@@ -26,7 +26,7 @@ header {
   <!-- header -->
   <header class="boxed">
     <div class="logo">
-      <img :src="Company_url" width="50px " alt="Company Logo" />
+      <a href="#"><img :src="Company_url" width="50px " alt="Company Logo" /></a>
     </div>
     <nav class="menu">
       <ul>

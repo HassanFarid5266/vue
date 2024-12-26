@@ -18,7 +18,7 @@
 
 .shop .shop-content .images img{
     width: 100%;
-    transition: all 1s;
+    transition: all 3s;
 }
 
 .shop .shop-content .images img:hover{
